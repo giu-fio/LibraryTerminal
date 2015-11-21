@@ -1,0 +1,10 @@
+<Glide Version="1.0.7">
+  <Window Name="instance115" Width="320" Height="240" BackColor="FFFFFF">
+	<Button Name="actionButton" X="0" Y="200" Width="160" Height="40" Alpha="255" Text="Borrow" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/>
+	<Button Name="cancelButton" X="160" Y="200" Width="160" Height="40" Alpha="255" Text="Cancel" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/>
+	<DataGrid Name="dataGrid" X="0" Y="0" Width="320" Height="120" Alpha="255" Font="4" RowCount="4" RowHeight="40" Draggable="True"
+	 TappableCells="True" SortableHeaders="False" ShowHeaders="False" ShowScrollbar="False" ScrollbarWidth="4" HeadersBackColor="707476"
+	 HeadersFontColor="FFFFFF" ItemsBackColor="80CBC4" ItemsAltBackColor="E0F2F1" ItemsFontColor="000000" SelectedItemBackColor="FFF299"
+	 SelectedItemFontColor="000000" GridColor="424242" ScrollbarBackColor="C0C0C0" ScrollbarScrubberColor="000000"/>
+  </Window>
+</Glide>

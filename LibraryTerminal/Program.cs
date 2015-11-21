@@ -17,25 +17,33 @@ namespace LibraryTerminal
 {
     public partial class Program
     {
-        // This method is run when the mainboard is powered up or reset.   
+        private const string IP_ADDRESS = "169.254.127.41";
+        private ILibraryController controller;
+
         void ProgramStarted()
         {
-            /*******************************************************************************************
-            Modules added in the Program.gadgeteer designer view are used by typing 
-            their name followed by a period, e.g.  button.  or  camera.
-            
-            Many modules generate useful events. Type +=<tab><tab> to add a handler to an event, e.g.:
-                button.ButtonPressed +=<tab><tab>
-            
-            If you want to do something periodically, use a GT.Timer and handle its Tick event, e.g.:
-                GT.Timer timer = new GT.Timer(1000); // every second (1000ms)
-                timer.Tick +=<tab><tab>
-                timer.Start();
-            *******************************************************************************************/
+            Debug.EnableGCMessages(true);
+            InitModules();
+            ILibraryView view = new LibraryView(displayT35, camera);           
+            controller = new LibraryController(view);
 
-
-            // Use Debug.Print to show messages in Visual Studio's "Output" window during debugging.
-            Debug.Print("Program Started");
         }
+
+        private void InitModules()
+        {
+            //Network
+            ethernetJ11D.NetworkInterface.Open();
+            ethernetJ11D.UseStaticIP("169.254.125.10", "255.255.0.0", IP_ADDRESS);
+            //Rfid
+            rfidReader.IdReceived += rfidReader_IdReceived;
+        }
+
+
+        void rfidReader_IdReceived(RFIDReader sender, string e)
+        {
+            if (controller != null) controller.Login(e);
+        }
+
+
     }
 }

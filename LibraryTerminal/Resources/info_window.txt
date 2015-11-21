@@ -1,0 +1,11 @@
+<Glide Version="1.0.7">
+  <Window Name="instance115" Width="320" Height="240" BackColor="FFFFFF">
+    <TextBlock Name="nameText" X="0" Y="0" Width="320" Height="60" Alpha="255" Text="Giuseppe Fiorino" TextAlign="Center" TextVerticalAlign="Middle" Font="6" FontColor="0" BackColor="000000" ShowBackColor="False"/>
+    <TextBlock Name="loansText" X="16" Y="60" Width="224" Height="32" Alpha="255" Text="Loans: " TextAlign="Left" TextVerticalAlign="Middle" Font="6" FontColor="0" BackColor="000000" ShowBackColor="False"/>
+    <TextBlock Name="overdueloansText" X="16" Y="108" Width="224" Height="32" Alpha="255" Text="Overdue Loans: " TextAlign="Left" TextVerticalAlign="Middle" Font="6" FontColor="0" BackColor="000000" ShowBackColor="False"/>
+    <CheckBox Name="loansCheckBox" X="260" Y="60" Width="32" Height="32" Alpha="255" Checked="False"/>
+    <CheckBox Name="overdueLoansCheckBox" X="260" Y="108" Width="32" Height="32" Alpha="255" Checked="False"/>
+    <Button Name="moreButton" X="5" Y="160" Width="150" Height="75" Alpha="255" Text="More Information" Font="5" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/>
+    <Button Name="cancelButton" X="165" Y="160" Width="150" Height="75" Alpha="255" Text="Cancel" Font="5" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/>
+  </Window>
+</Glide>

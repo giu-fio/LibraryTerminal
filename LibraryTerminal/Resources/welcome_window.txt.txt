@@ -1,0 +1,9 @@
+<Glide Version="1.0.7">
+  <Window Name="instance115" Width="320" Height="240" BackColor="FFFFFF">
+    <Button Name="returnButton" X="107" Y="160" Width="106" Height="80" Alpha="255" Text="Consegna libro" Font="5" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/>
+    <Button Name="borrowButton" X="0" Y="160" Width="106" Height="80" Alpha="255" Text="Prenota libro" Font="5" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/>
+    <Button Name="infoButton" X="214" Y="160" Width="106" Height="80" Alpha="255" Text="Info utente" Font="5" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/>
+    <TextBlock Name="text" X="0" Y="40" Width="320" Height="100" Alpha="255" Text="TextBlock" TextAlign="Center" TextVerticalAlign="Top" Font="7" FontColor="0" BackColor="000000" ShowBackColor="false"/>
+    <Button Name="logoutButton" X="240" Y="0" Width="80" Height="32" Alpha="255" Text="Log Out" Font="4" FontColor="FFFFFF" DisabledFontColor="808080" TintColor="D32F2F" TintAmount="200"/>
+  </Window>
+</Glide>
